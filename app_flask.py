@@ -4,7 +4,7 @@ from datetime import datetime
 import json
 
 app = Flask(__name__)
-# Добавьте charset=utf8 к URI базы данных
+
 app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:123@localhost:5432/ads_db?client_encoding=utf8"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config['JSON_AS_ASCII'] = False
